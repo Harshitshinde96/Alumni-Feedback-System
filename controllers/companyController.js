@@ -28,7 +28,7 @@ export const createCompany = async (req, res) => {
 
 export const getCompanies=async(req,res)=>{
     try {
-      const getcompanies=await companyModel.find()
+      const getcompanies=await companyModel.find().lean();
       res.json({
         getcompanies
       })
