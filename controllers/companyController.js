@@ -28,7 +28,9 @@ export const createCompany = async (req, res) => {
 
 export const getCompanies=async(req,res)=>{
     try {
+      console.log('Start fetching companies...');
       const getcompanies=await companyModel.find().lean();
+      console.log('Fetched companies successfully');
       res.json({
         getcompanies
       })
