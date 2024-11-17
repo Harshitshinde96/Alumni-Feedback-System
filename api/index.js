@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import dbConnect from "../config/database.js";
-import User from "../models/User.js";
+import userModel from "../models/User.js";
 import router from "../routes/FeedbackRoutes.js";
 
 const app = express();
