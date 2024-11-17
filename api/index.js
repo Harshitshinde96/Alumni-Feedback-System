@@ -7,6 +7,9 @@ import router from "../routes/FeedbackRoutes.js";
 
 const app = express();
 
+// dotenv.config({ path: "../.env" });
+dotenv.config();
+
 const PORT = 3000 || process.env.PORT;
 
 //Middleware fro parsing JSON requests
@@ -24,8 +27,6 @@ app.get("/", (req, res)=>{
 })
 
 
-
-dotenv.config();
 
 dbConnect();
 
