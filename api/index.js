@@ -12,7 +12,7 @@ dotenv.config();
 
 const PORT = 3000 || process.env.PORT;
 
-//Middleware fro parsing JSON requests
+//Middleware for parsing JSON requests
 app.use(express.json());
   
 //Mounting api routes
